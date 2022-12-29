@@ -1,0 +1,34 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #111;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden; /*переполнение: скрыто*/
+  margin: 0;
+}
+
+.container {
+  display: flex; /*flex добавляем, чтоб выстроить в одну линию*/
+  justify-content: center; /*выравнивание содержания*/
+  align-items: center; /*выравниевание элементов*/
+  flex-wrap: wrap; /*обернуть*/
+  max-width: 500px; /*макс ширина доски*/
+}
+
+.square {
+  width: 16px;
+  height: 16px;
+  background: #1d1d1d; /*фонт квадратиков*/
+  margin: 2px; /*отступ между квадратиками 2px*/
+  box-shadow: #000; /*тень бокса*/
+  transition: 5s ease; /*анимация 2 секунды с функцией ease*/
+}
+
+.square:hover {
+  transition-duration: 0s; /*задержска перехода*/
+}
